@@ -1,0 +1,85 @@
+<div class="container">
+  <h2>Formulario Reactivo</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+    <!-- Campo Nombre -->
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input
+        type="text"
+        id="nombre"
+        formControlName="nombre"
+        class="form-control"
+        [class.is-invalid]="nombre?.invalid && submitted"
+      />
+      <div class="error-message" *ngIf="nombre?.invalid && submitted">
+        <div *ngIf="nombre?.errors?.['required']">El nombre es requerido</div>
+        <div *ngIf="nombre?.errors?.['minlength']">El nombre debe tener al menos 3 caracteres</div>
+        <div *ngIf="nombre?.errors?.['noNumbers']">El nombre no puede contener números</div>
+      </div>
+    </div>
+
+    <!-- Campo Email -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        formControlName="email"
+        class="form-control"
+        [class.is-invalid]="email?.invalid && submitted"
+      />
+      <div class="error-message" *ngIf="email?.invalid && submitted">
+        <span *ngIf="email?.errors?.['required']">El email es requerido</span>
+        <span *ngIf="email?.errors?.['email']">Ingresa un email válido</span>
+      </div>
+    </div>
+
+    <!-- Campo Edad -->
+    <div class="form-group">
+      <label for="edad">Edad:</label>
+      <input
+        type="number"
+        id="edad"
+        formControlName="edad"
+        class="form-control"
+        [class.is-invalid]="edad?.invalid && submitted"
+      />
+      <div class="error-message" *ngIf="edad?.invalid && submitted">
+        <span *ngIf="edad?.errors?.['required']">La edad es requerida</span>
+        <span *ngIf="edad?.errors?.['min']">La edad debe ser mayor a 18</span>
+        <span *ngIf="edad?.errors?.['max']">La edad debe ser menor a 120</span>
+      </div>
+    </div>
+
+    <!-- Campo Select -->
+    <div class="form-group">
+      <label for="categoria">Categoría:</label>
+      <select
+        id="categoria"
+        formControlName="categoria"
+        class="form-control"
+        [class.is-invalid]="categoria?.invalid && submitted"
+      >
+        <option value="" disabled>Selecciona una categoría</option>
+        <option value="administrador">Administrador</option>
+        <option value="usuario">Usuario</option>
+        <option value="cliente">Cliente</option>
+        <option value="vendedor">Vendedor</option>
+      </select>
+      <div class="error-message" *ngIf="categoria?.invalid && submitted">
+        <span *ngIf="categoria?.errors?.['required']">Debes seleccionar una categoría</span>
+      </div>
+    </div>
+
+    <!-- Botones -->
+    <div class="form-buttons">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="button" class="btn btn-secondary" (click)="form.reset(); submitted = false">Limpiar</button>
+    </div>
+  </form>
+
+  <!-- Botón de vuelta -->
+  <div class="back-button">
+    <button routerLink="/home" class="btn-back">&larr; Volver al inicio</button>
+  </div>
+</div>
