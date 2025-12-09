@@ -30,6 +30,4 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.btn-back:hover {
-  background-color: #5a6268;
-}
+.btn-back:hover { background-color: #5a6268 }

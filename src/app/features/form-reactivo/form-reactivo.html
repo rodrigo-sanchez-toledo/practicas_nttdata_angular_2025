@@ -7,15 +7,13 @@
       <input
         type="text"
         id="nombre"
+        aria-invalid="{{ nombre?.invalid && submitted }}"
+        aria-describedby="nombreErrors"
         formControlName="nombre"
         class="form-control"
         [class.is-invalid]="nombre?.invalid && submitted"
       />
-      <div class="error-message" *ngIf="nombre?.invalid && submitted">
-        <div *ngIf="nombre?.errors?.['required']">El nombre es requerido</div>
-        <div *ngIf="nombre?.errors?.['minlength']">El nombre debe tener al menos 3 caracteres</div>
-        <div *ngIf="nombre?.errors?.['noNumbers']">El nombre no puede contener números</div>
-      </div>
+      <app-form-errors [control]="nombre" [submitted]="submitted" id="nombreErrors"></app-form-errors>
     </div>
 
     <!-- Campo Email -->
@@ -24,31 +22,34 @@
       <input
         type="email"
         id="email"
+        aria-invalid="{{ email?.invalid && submitted }}"
+        aria-describedby="emailErrors"
         formControlName="email"
         class="form-control"
         [class.is-invalid]="email?.invalid && submitted"
       />
-      <div class="error-message" *ngIf="email?.invalid && submitted">
-        <span *ngIf="email?.errors?.['required']">El email es requerido</span>
-        <span *ngIf="email?.errors?.['email']">Ingresa un email válido</span>
-      </div>
+      <app-form-errors [control]="email" [submitted]="submitted" id="emailErrors"></app-form-errors>
     </div>
 
     <!-- Campo Edad -->
     <div class="form-group">
       <label for="edad">Edad:</label>
+      <!-- Usamos input text para evitar flechitas del number, pero indicamos inputmode y pattern -->
       <input
-        type="number"
+        type="text"
         id="edad"
+        inputmode="numeric"
+        pattern="[0-9]*"
+        min="18"
+        max="120"
+        aria-invalid="{{ edad?.invalid && submitted }}"
+        aria-describedby="edadErrors"
         formControlName="edad"
         class="form-control"
         [class.is-invalid]="edad?.invalid && submitted"
+        (input)="keepOnlyDigits($event)"
       />
-      <div class="error-message" *ngIf="edad?.invalid && submitted">
-        <span *ngIf="edad?.errors?.['required']">La edad es requerida</span>
-        <span *ngIf="edad?.errors?.['min']">La edad debe ser mayor a 18</span>
-        <span *ngIf="edad?.errors?.['max']">La edad debe ser menor a 120</span>
-      </div>
+      <app-form-errors [control]="edad" [submitted]="submitted" id="edadErrors"></app-form-errors>
     </div>
 
     <!-- Campo Select -->
@@ -56,6 +57,8 @@
       <label for="categoria">Categoría:</label>
       <select
         id="categoria"
+        aria-invalid="{{ categoria?.invalid && submitted }}"
+        aria-describedby="categoriaErrors"
         formControlName="categoria"
         class="form-control"
         [class.is-invalid]="categoria?.invalid && submitted"
@@ -66,20 +69,18 @@
         <option value="cliente">Cliente</option>
         <option value="vendedor">Vendedor</option>
       </select>
-      <div class="error-message" *ngIf="categoria?.invalid && submitted">
-        <span *ngIf="categoria?.errors?.['required']">Debes seleccionar una categoría</span>
-      </div>
+      <app-form-errors [control]="categoria" [submitted]="submitted" id="categoriaErrors"></app-form-errors>
     </div>
 
     <!-- Botones -->
     <div class="form-buttons">
       <button type="submit" class="btn btn-primary">Enviar</button>
-      <button type="button" class="btn btn-secondary" (click)="form.reset(); submitted = false">Limpiar</button>
+      <button type="button" class="btn btn-secondary" (click)="resetForm()">Limpiar</button>
     </div>
   </form>
 
   <!-- Botón de vuelta -->
   <div class="back-button">
-    <button routerLink="/home" class="btn-back">&larr; Volver al inicio</button>
+    <button type="button" routerLink="/home" class="btn-back">&larr; Volver al inicio</button>
   </div>
 </div>

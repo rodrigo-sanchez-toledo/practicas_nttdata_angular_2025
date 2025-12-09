@@ -1,0 +1,11 @@
+@if ((control && (control.invalid && submitted)) || (control && control.invalid && control.touched)) {
+  <div class="form-errors" [attr.id]="id">
+    @if (hasError('required')) { <div>Este campo es requerido.</div> }
+    @if (hasError('email')) { <div>Introduce un correo válido.</div> }
+    @if (hasError('minlength')) { <div>Longitud mínima requerida.</div> }
+    @if (hasError('min')) { <div>Valor menor al mínimo.</div> }
+    @if (hasError('max')) { <div>Valor mayor al máximo.</div> }
+    @if (hasError('pattern')) { <div>Formato inválido.</div> }
+    @if (hasError('noNumbers')) { <div>El valor no puede contener números.</div> }
+  </div>
+}
