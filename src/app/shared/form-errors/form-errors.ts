@@ -1,9 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { AbstractControl, ValidationErrors } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-form-errors',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './form-errors.html',
   styleUrls: ['./form-errors.css'] ,
 })

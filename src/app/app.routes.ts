@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { UnsavedChangesGuard } from './core/guards/unsaved-changes.guard';
 
-export const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+const appRoutes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: 'home',
     loadComponent: () => import('./features/home/home').then(m => m.HomeComponent)
@@ -21,3 +21,5 @@ export const routes: Routes = [
     canDeactivate: [UnsavedChangesGuard]
   }
 ];
+
+export const routes: Routes = appRoutes;

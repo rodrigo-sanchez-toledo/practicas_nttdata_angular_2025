@@ -1,11 +1,11 @@
 @if ((control && (control.invalid && submitted)) || (control && control.invalid && control.touched)) {
   <div class="form-errors" [attr.id]="id">
-    @if (hasError('required')) { <div>Este campo es requerido.</div> }
-    @if (hasError('email')) { <div>Introduce un correo válido.</div> }
-    @if (hasError('minlength')) { <div>Longitud mínima requerida.</div> }
-    @if (hasError('min')) { <div>Valor menor al mínimo.</div> }
-    @if (hasError('max')) { <div>Valor mayor al máximo.</div> }
-    @if (hasError('pattern')) { <div>Formato inválido.</div> }
-    @if (hasError('noNumbers')) { <div>El valor no puede contener números.</div> }
+    @if (hasError('required')) { <div i18n="@@errors.required">Este campo es requerido / This field is required</div> }
+    @if (hasError('email')) { <div i18n="@@errors.email">Ingrese un email válido / Enter a valid email</div> }
+    @if (hasError('minlength')) { <div i18n="@@errors.minlength">Mínimo 3 caracteres / Minimum 3 characters</div> }
+    @if (hasError('min')) { <div i18n="@@errors.min">Debe ser mayor o igual a 18 / Must be greater than or equal to 18</div> }
+    @if (hasError('max')) { <div i18n="@@errors.max">Debe ser menor o igual a 120 / Must be less than or equal to 120</div> }
+    @if (hasError('pattern')) { <div i18n="@@errors.pattern">Formato inválido / Invalid format</div> }
+    @if (hasError('noNumbers')) { <div i18n="@@errors.noNumbers">Este campo no puede contener números / This field cannot contain numbers</div> }
   </div>
 }

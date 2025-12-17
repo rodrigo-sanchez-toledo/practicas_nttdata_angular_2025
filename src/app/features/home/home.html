@@ -1,16 +1,16 @@
 <div class="container">
-  <h1>Bienvenido a la página principal</h1>
+  <h1 i18n="@@home.title">Bienvenido a la página principal</h1>
   <nav class="navigation">
-    <button routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-      🏠 Home
+    <button routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" i18n="@@nav.home">
+      🏠 Inicio
     </button>
-    <button routerLink="/about" routerLinkActive="active">
-      ℹ️ About
+    <button routerLink="/about" routerLinkActive="active" i18n="@@nav.about">
+      ℹ️ Acerca de
     </button>
-    <button routerLink="/products" routerLinkActive="active">
+    <button routerLink="/products" routerLinkActive="active" i18n="@@nav.products">
       📦 Productos
     </button>
-    <button routerLink="/form-reactivo" routerLinkActive="active">
+    <button routerLink="/form-reactivo" routerLinkActive="active" i18n="@@nav.form">
       📝 Formulario
     </button>
   </nav>

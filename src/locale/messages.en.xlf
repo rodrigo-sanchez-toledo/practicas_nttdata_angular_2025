@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" target-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="about.title" datatype="html">
+        <source>Acerca de Nosotros</source>
+        <target>About Us</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.description1" datatype="html">
+        <source>Esta es la página de información sobre el proyecto.</source>
+        <target>This is the information page about the project.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.description2" datatype="html">
+        <source>Aquí puedes conocer más detalles sobre nuestra aplicación Angular.</source>
+        <target>Here you can learn more details about our Angular application.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="about.backHome" datatype="html">
+        <source>← Volver al inicio</source>
+        <target>← Back to home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.title" datatype="html">
+        <source>Formulario Reactivo</source>
+        <target>Reactive Form</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.nombre" datatype="html">
+        <source>Nombre:</source>
+        <target>Name:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.email" datatype="html">
+        <source>Correo Electrónico:</source>
+        <target>Email:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">21,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.edad" datatype="html">
+        <source>Edad:</source>
+        <target>Age:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.categoria" datatype="html">
+        <source>Categoría:</source>
+        <target>Category:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">57,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.selectCategory" datatype="html">
+        <source>Selecciona una categoría</source>
+        <target>Select a category</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.admin" datatype="html">
+        <source>Administrador</source>
+        <target>Administrator</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.user" datatype="html">
+        <source>Usuario</source>
+        <target>User</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.client" datatype="html">
+        <source>Cliente</source>
+        <target>Client</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.seller" datatype="html">
+        <source>Vendedor</source>
+        <target>Seller</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">70,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.submit" datatype="html">
+        <source>Enviar</source>
+        <target>Submit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.reset" datatype="html">
+        <source>Limpiar</source>
+        <target>Clear</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">78,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.backHome" datatype="html">
+        <source>← Volver al inicio</source>
+        <target>← Back to home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/form-reactivo/form-reactivo.html</context>
+          <context context-type="linenumber">84,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.title" datatype="html">
+        <source>Bienvenido a la página principal</source>
+        <target>Welcome to the main page</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.home" datatype="html">
+        <source> 🏠 Inicio </source>
+        <target> 🏠 Home </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.about" datatype="html">
+        <source> ℹ️ Acerca de </source>
+        <target> ℹ️ About </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.products" datatype="html">
+        <source> 📦 Productos </source>
+        <target> 📦 Products </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.form" datatype="html">
+        <source> 📝 Formulario </source>
+        <target> 📝 Form </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="products.title" datatype="html">
+        <source>Productos</source>
+        <target>Products</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/products/products.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="products.product1" datatype="html">
+        <source>Producto 1</source>
+        <target>Product 1</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/products/products.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="products.description1" datatype="html">
+        <source>Descripción del producto 1</source>
+        <target>Description of product 1</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/products/products.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="products.price1" datatype="html">
+        <source>$99.99</source>
+        <target>$99.99</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/products/products.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="products.product2" datatype="html">
+        <source>Producto 2</source>
+        <target>Product 2</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/products/products.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="products.description2" datatype="html">
+        <source>Descripción del producto 2</source>
+        <target>Description of product 2</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/products/products.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="products.price2" datatype="html">
+        <source>$149.99</source>
+        <target>$149.99</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/products/products.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="products.product3" datatype="html">
+        <source>Producto 3</source>
+        <target>Product 3</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/products/products.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="products.description3" datatype="html">
+        <source>Descripción del producto 3</source>
+        <target>Description of product 3</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/products/products.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="products.price3" datatype="html">
+        <source>$199.99</source>
+        <target>$199.99</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/products/products.html</context>
+          <context context-type="linenumber">17,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="products.backHome" datatype="html">
+        <source>← Volver al inicio</source>
+        <target>← Back to home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/products/products.html</context>
+          <context context-type="linenumber">21,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="errors.required" datatype="html">
+        <source>Este campo es requerido / This field is required</source>
+        <target>This field is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/form-errors/form-errors.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="errors.email" datatype="html">
+        <source>Ingrese un email válido / Enter a valid email</source>
+        <target>Enter a valid email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/form-errors/form-errors.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="errors.minlength" datatype="html">
+        <source>Mínimo 3 caracteres / Minimum 3 characters</source>
+        <target>Minimum 3 characters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/form-errors/form-errors.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="errors.min" datatype="html">
+        <source>Debe ser mayor o igual a 18 / Must be greater than or equal to 18</source>
+        <target>Must be greater than or equal to 18</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/form-errors/form-errors.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="errors.max" datatype="html">
+        <source>Debe ser menor o igual a 120 / Must be less than or equal to 120</source>
+        <target>Must be less than or equal to 120</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/form-errors/form-errors.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="errors.pattern" datatype="html">
+        <source>Formato inválido / Invalid format</source>
+        <target>Invalid format</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/form-errors/form-errors.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="errors.noNumbers" datatype="html">
+        <source>Este campo no puede contener números / This field cannot contain numbers</source>
+        <target>This field cannot contain numbers</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/form-errors/form-errors.html</context>
+          <context context-type="linenumber">9,12</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

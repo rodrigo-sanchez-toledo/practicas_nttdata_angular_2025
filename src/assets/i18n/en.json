@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "🏠 Home",
+    "about": "ℹ️ About",
+    "products": "📦 Products",
+    "form": "📝 Form"
+  },
+  "home": {
+    "title": "Welcome to the home page",
+    "welcome": "Welcome"
+  },
+  "form": {
+    "title": "Reactive Form",
+    "submit": "Submit",
+    "reset": "Clear",
+    "nombre": "Name",
+    "email": "Email",
+    "edad": "Age",
+    "categoria": "Category",
+    "success": "Form submitted successfully!",
+    "unsaved": "You have unsaved changes. Do you want to continue?"
+  },
+  "errors": {
+    "required": "This field is required.",
+    "email": "Enter a valid email.",
+    "minlength": "Minimum length required.",
+    "min": "Value less than minimum.",
+    "max": "Value greater than maximum.",
+    "pattern": "Invalid format.",
+    "noNumbers": "The value cannot contain numbers."
+  }
+}

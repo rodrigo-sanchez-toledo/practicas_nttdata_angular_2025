@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "🏠 Inicio",
+    "about": "ℹ️ Acerca de",
+    "products": "📦 Productos",
+    "form": "📝 Formulario"
+  },
+  "home": {
+    "title": "Bienvenido a la página principal",
+    "welcome": "Bienvenido"
+  },
+  "form": {
+    "title": "Formulario Reactivo",
+    "submit": "Enviar",
+    "reset": "Limpiar",
+    "nombre": "Nombre",
+    "email": "Correo Electrónico",
+    "edad": "Edad",
+    "categoria": "Categoría",
+    "success": "¡Formulario enviado correctamente!",
+    "unsaved": "Tienes cambios sin guardar. ¿Deseas continuar?"
+  },
+  "errors": {
+    "required": "Este campo es requerido.",
+    "email": "Introduce un correo válido.",
+    "minlength": "Longitud mínima requerida.",
+    "min": "Valor menor al mínimo.",
+    "max": "Valor mayor al máximo.",
+    "pattern": "Formato inválido.",
+    "noNumbers": "El valor no puede contener números."
+  }
+}

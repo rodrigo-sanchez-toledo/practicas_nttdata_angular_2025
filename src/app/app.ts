@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { LanguageSwitcherComponent } from './shared/language-switcher/language-switcher';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [RouterOutlet, LanguageSwitcherComponent],
+  template: `
+    <app-language-switcher></app-language-switcher>
+    <router-outlet></router-outlet>
+  `
 })
-export class App {
-  protected readonly title = signal('front_angular');
-}
+export class AppComponent {}

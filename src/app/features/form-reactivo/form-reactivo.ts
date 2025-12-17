@@ -44,7 +44,7 @@ export class FormReactivoComponent implements OnInit {
     this.submitted = true;
     
     if (this.form.valid) {
-      alert('¡Formulario enviado correctamente!');
+      alert('Formulario enviado correctamente / Form submitted successfully');
       this.resetForm();
     }
   }
@@ -82,6 +82,6 @@ export class FormReactivoComponent implements OnInit {
       return true;
     }
 
-    return window.confirm('Tienes cambios sin guardar. ¿Deseas continuar?');
+    return window.confirm('¿Tiene cambios sin guardar. ¿Desea salir? / You have unsaved changes. Do you want to leave?');
   }
 }
